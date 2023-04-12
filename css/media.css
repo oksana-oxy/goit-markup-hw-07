@@ -9,6 +9,85 @@
         max-width: 766px;
     }
 
+    /* HEADER */
+
+    .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    margin-right: auto;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+    display: block;
+    font-family: inherit;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu-open {
+    display: none;
+}
+    /* HERO */
+
+    
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
+    }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab-2x.jpg);
+            }
+        }
+
+    .title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px;
+    }
+
     .list-benefits {
         gap: 72px 24px;
     }
@@ -17,11 +96,7 @@
         width: calc((100% - 24px) / 2);
     }
 
-    .title-item {
-        text-align: left;
-    }
-
-        .team-list {
+    .team-list {
         gap: 64px 24px;
     }
 
@@ -46,6 +121,58 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+    /* HEADER */
+
+    .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    }
+
+   .address-list {
+       flex-direction: row;
+       flex-wrap: nowrap;
+       gap: 40px;
+   }
+
+   .address {
+       display: block;
+       font-family: inherit;
+       font-style: normal;
+       font-size: 16px;
+       line-height: 1.5;
+       letter-spacing: 0.02em;
+       color: var(--secondary-text-color);
+       display: flex;
+       transition-property: color;
+       transition-duration: 250ms;
+       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   
+    
+        
+    /* HERO */
+
+    .title {
+        margin: 0 auto 48px;
+    }
+
+    .hero {
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desk.jpg);
+    }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-desk-2x.jpg);
+            }
+        }
+
     .list-benefits {
         gap: 24px;
     }
