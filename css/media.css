@@ -1,12 +1,12 @@
 @media screen and (min-width:428px) {
     .container {
-        width: 426px;
+        max-width: 426px;
     }
 }
 
 @media screen and (min-width:768px) {
     .container {
-        width: 766px;
+        max-width: 766px;
     }
 
     .list-benefits {
@@ -20,11 +20,27 @@
     .title-item {
         text-align: left;
     }
+
+        .team-list {
+        gap: 64px 24px;
+    }
+
+     
+        /* Customers */
+
+    .customer-item {
+        width: calc((100% - 24px * 2) / 3);
+    }
+
+        .customers-list {
+            display: flex;
+            gap: 72px 24px;
+        }
 }
 
 @media screen and (min-width:1158px) {
     .container {
-        width: 1158px;
+        max-width: 1158px;
     }
     .section {
         padding-top: 120px;
@@ -70,7 +86,7 @@
     .doing-container {
     display: block;
     }
-        .section-name {
+    .section-name {
             font-weight: 700;
             font-size: 36px;
             line-height: 1.11;
@@ -81,10 +97,10 @@
             margin-bottom: 72px;
         }
     
-        .section-doing {
-padding-top: 0;
-}  
-        .doing-list {
+    .section-doing {
+        padding-top: 0;
+    }  
+    .doing-list {
             display: flex;
             gap: 24px;
         }
@@ -93,5 +109,20 @@ padding-top: 0;
         .team-item {
         width: calc((100% - 72px) / 4);
         }
+
+        .special-container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+                /* Customers */
+        .customer-item {
+            width: calc((100% - 24px * 5) / 6);
+            height: 88px;
+        }
+        .customers-list {
+        gap: 24px;
+    }
+    
 }
 
