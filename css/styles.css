@@ -32,6 +32,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: 100%;
 }
 .container {
     max-width: 426px;
@@ -40,7 +42,7 @@ img {
     padding-right: 15px;
 }
 
-.section {
+. {
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -131,7 +133,6 @@ img {
     border-radius: 50%;
 }
 
-
 .mob-menu-item:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -147,6 +148,10 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-color);
+}
+
+.mob-studio {
+    color: var(--button-aktive-color);
 }
 
 .mob-address-list {
@@ -210,7 +215,7 @@ color: var(--accent-color);
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg)');
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mob-2x.jpg);
     }
 }
 
@@ -590,7 +595,6 @@ width: 100%;
 
 
     .section-portfolio {
-        max-width: 428px;
         padding-top: 48px;
         padding-bottom: 48px;
     }
@@ -646,7 +650,7 @@ width: 100%;
         flex-wrap: wrap;
         gap: 16px 24px;
         justify-content: left;
-        margin-bottom: 72px;
+        margin-bottom: 48px;
     }
 
     .works-list {
@@ -677,40 +681,7 @@ width: 100%;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
  }
 
- .current-studio {
-    position: relative;
-    color: var(--button-aktive-color);
- }
-
- .current-studio::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 44px;
-    left: 0;
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--button-aktive-color);
- }
-
- .current-portfolio {
-    position: relative;
-    color: var(--button-aktive-color);
- }
-
- .current-portfolio::after {
-     content: '';
-     display: inline-block;
-     position: absolute;
-     top: 44px;
-     left: 0;
-     width: 66px;
-     height: 4px;
-     border-radius: 2px;
-     background-color: var(--button-aktive-color);
- }
-
+  
  .works-top-wrap {
     position: relative;
     overflow: hidden;
@@ -754,8 +725,8 @@ width: 100%;
  /* ----------MODAL---------- */
 
  .modal {
-    width: 408px;
-    min-height: 576px;
+    max-width: 392px;
+    width: calc(100% - 36px);
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
@@ -908,12 +879,13 @@ width: 100%;
     color: var(--subtle-text);
 }
 
-.check-text span {
+.check {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     fill: transparent;

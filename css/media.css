@@ -62,6 +62,40 @@
     flex-wrap: wrap;
 }
 
+.current-studio {
+    position: relative;
+    color: var(--button-aktive-color);
+}
+
+.current-studio::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--button-aktive-color);
+}
+
+.current-portfolio {
+    position: relative;
+    color: var(--button-aktive-color);
+}
+
+.current-portfolio::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 66px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--button-aktive-color);
+}
+
 .menu-open {
     display: none;
 }
@@ -96,8 +130,25 @@
         width: calc((100% - 24px) / 2);
     }
 
+    .title-item {
+        text-align: left;
+    }
+
+        /* Our Team */
+
+    .special-container {
+        width: 582px;
+        padding: 0;
+    }
+
     .team-list {
         gap: 64px 24px;
+        max-width: 552px;
+        margin: 0 auto;
+    }
+
+    .team-item {
+        width: calc((100% - 24px) / 2);
     }
 
      
@@ -114,6 +165,7 @@
         .customers-list {
             display: flex;
             gap: 72px 24px;
+            max-width: 552px;
         }
 
 
@@ -143,7 +195,6 @@
     }
 
         .footer-soc {
-            width: 208px;
             margin: 0;
         }
         
@@ -159,6 +210,33 @@
         .subscribe-input {
             width: 264px;
         }
+
+/* ----------MODAL---------- */
+
+    .modal {
+        width: 408px;
+    }
+
+     /******Portfolio******/
+
+    .section-portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .filter-list {
+        margin-bottom: 64px;
+    }
+    
+    .works-list {
+        flex-direction: row;
+        gap: 72px 24px;
+    }
+    
+     .works-card {
+        width: calc((100% - 24px) / 2);
+    }
+
     }   
         
 
@@ -305,6 +383,10 @@
 
         /* ------Footer------ */
 
+    .footer {
+        padding: 100px 0;
+    }
+
     .footer-container {
         width: 100%;
         gap: 0;
@@ -315,15 +397,22 @@
     }
 
     .footer-soc {
-        margin-right: 80px;
+        margin-right: auto;
     }
 
 
         /******Portfolio******/
 
+    .section {
+        padding-top: 100px;
+    }
+
+    .filter-list {
+        margin-bottom: 72px;
+        justify-content: center;
+    }
+
     .works-list {
-        display: flex;
-        flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 48px;
         flex-basis: calc((100% - 48px) / 3);

@@ -32,7 +32,7 @@
           >
           <ul class="header-list list">
             <li>
-              <a class="link nav current-studio" href="./index.html">Studio</a>
+              <a class="current-studio link nav" href="./index.html">Studio</a>
             </li>
             <li><a class="link nav" href="./portfolio.html">Portfolio</a></li>
             <li><a class="link nav" href="">Contacts</a></li>
@@ -66,7 +66,9 @@
         </button>
         <ul class="mob-menu-list list">
           <li class="mob-menu-item">
-            <a class="link mob-menu-nav" href="./index.html">Studio</a>
+            <a class="link mob-menu-nav mob-studio" href="./index.html"
+              >Studio</a
+            >
           </li>
           <li class="mob-menu-item">
             <a class="link mob-menu-nav" href="./portfolio.html">Portfolio</a>
@@ -587,13 +589,15 @@
               value="true"
             />
             <label for="privacy" class="check-text">
-              <span>
+              <span class="check">
                 <svg width="10" Height="8" class="check-icon">
                   <use href="./images/icons.svg#icon-vector-1"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-policy">Privacy Policy</a></label
+              <div>
+                I accept the terms and conditions of the
+                <a href="" class="privacy-policy">Privacy Policy</a>
+              </div></label
             >
           </div>
           <button type="submit" class="btn-send">Send</button>
