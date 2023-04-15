@@ -1,12 +1,12 @@
 @media screen and (min-width:428px) {
     .container {
-        max-width: 426px;
+        max-width: 428px;
     }
 }
 
 @media screen and (min-width:768px) {
     .container {
-        max-width: 766px;
+        max-width: 768px;
     }
 
     /* HEADER */
@@ -136,12 +136,7 @@
 
         /* Our Team */
 
-    .special-container {
-        width: 582px;
-        padding: 0;
-    }
-
-    .team-list {
+        .team-list {
         gap: 64px 24px;
         max-width: 552px;
         margin: 0 auto;
@@ -153,11 +148,7 @@
 
      
         /* Customers */
-
-        .customers {
-            width: 582px;
-        }
-
+    
     .customer-item {
         width: calc((100% - 24px * 2) / 3);
     }
@@ -166,6 +157,7 @@
             display: flex;
             gap: 72px 24px;
             max-width: 552px;
+            margin: 0 auto;
         }
 
 
@@ -226,6 +218,7 @@
 
     .filter-list {
         margin-bottom: 64px;
+        justify-content: center;
     }
     
     .works-list {
@@ -243,6 +236,8 @@
 @media screen and (min-width:1158px) {
     .container {
         max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .section {
         padding-top: 120px;
@@ -364,21 +359,19 @@
         width: calc((100% - 72px) / 4);
         }
 
-        .special-container {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+    .team-list {
+        max-width: 100%;
+    }
 
                 /* Customers */
-        .customers {
-            width: 100%;
-        }
+       
         .customer-item {
             width: calc((100% - 24px * 5) / 6);
             height: 88px;
         }
         .customers-list {
-        gap: 24px;
+            max-width: 100%;
+            gap: 24px;
     }
 
         /* ------Footer------ */
@@ -403,13 +396,12 @@
 
         /******Portfolio******/
 
-    .section {
+    .section-portfolio {
         padding-top: 100px;
     }
 
     .filter-list {
         margin-bottom: 72px;
-        justify-content: center;
     }
 
     .works-list {
